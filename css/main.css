@@ -151,6 +151,15 @@ Footer
 	color: #f7941d;
 }
 
+footer {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    background: white;
+
+}
 
 footer a {
     padding: 3px 12px;
