@@ -26,14 +26,14 @@ nav a {
 	text-align: center;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
 }
 nav a:hover {
-	color: #FF3366;   /*why isnt this working?*/
+	color: #f7941d;
 }
 
-nav .current a {
-	color: #06A2CB;
-	border-radius: 5px;
+.current {
+    border-radius: 5px;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -46,14 +46,13 @@ html, body, nav {
 
 h1 {
     font-weight: bold;
-    text-decoration: underline;
+    color: #f7941d;
 
 }
 
 .hero {
-    color: black;
     position: relative;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
     border-radius: 20px;
     margin: 0px;
@@ -62,8 +61,6 @@ h1 {
     text-decoration: none;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     vertical-align: middle;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fff), color-stop(100%, #D0C6B1))
-
 }
 
 .centerimage {
@@ -151,7 +148,7 @@ Footer
 }
 
 .links-credit a:hover{
-	color: #0D56A6;
+	color: #f7941d;
 }
 
 
