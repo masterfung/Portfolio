@@ -3,7 +3,7 @@ Nav
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 nav {
 	position: relative;
-	font-size: 2em;
+	font-size: 2.5em;
 	font-weight: bold;
     text-align: right;
 }
@@ -26,14 +26,14 @@ nav a {
 	text-align: center;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
 }
 nav a:hover {
-	color: #FF3366;   /*why isnt this working?*/
+	color: #f7941d;
 }
 
-nav .current a {
-	color: #06A2CB;
-	border-radius: 5px;
+.current {
+    border-radius: 5px;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -41,19 +41,18 @@ Body
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 html, body, nav {
-    font-family: 'Poiret One', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 h1 {
     font-weight: bold;
-    text-decoration: underline;
+    color: #f7941d;
 
 }
 
 .hero {
-    color: black;
     position: relative;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
     border-radius: 20px;
     margin: 0px;
@@ -62,13 +61,16 @@ h1 {
     text-decoration: none;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     vertical-align: middle;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fff), color-stop(100%, #D0C6B1))
-
 }
 
 .centerimage {
     padding: 3px 3px;
     float: right;
+    width: 180px;
+    height: 180px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
 }
 
 .border {
@@ -77,6 +79,7 @@ h1 {
     color: #333;
 }
 
+<<<<<<< HEAD
 .btn {
     background-color: #218559;
     color: white;
@@ -100,9 +103,12 @@ h1 {
     text-align: center;
 }
 
+=======
+>>>>>>> gh-pages
 .design-title {
     text-align: center;
 }
+
 
 aside {
     background-color: #D0C6B1;
@@ -117,10 +123,97 @@ aside {
 }
 
 .about-me {
-	font-weight: bold;
+    font-weight: bold;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Blog Specific
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.blog-head {
+    font-size: 5em;
+    text-align: center;
+}
+
+.blog-anchors {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+
+.blog-anchors:hover {
+    color: #f7941d;
 }
 
 
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Arrows and Buttons
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.arrow {
+  background: #8ec63f;
+  color: #fff;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 12px;
+  position: relative;
+  text-decoration: none;
+}
+
+.arrow:before,
+.arrow:after {
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+
+.arrow:before {
+  border-bottom: 15px solid #8ec63f;
+  border-left: 15px solid transparent;
+  border-top: 15px solid #8ec63f;
+  left: -15px;
+}
+
+.arrow:after {
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #8ec63f;
+  border-top: 15px solid transparent;
+  right: -15px;
+}
+
+.arrow:hover {
+  background: #f7941d;
+  color: #fff;
+}
+
+.arrow:hover:before {
+  border-bottom: 15px solid #f7941d;
+  border-top: 15px solid #f7941d;
+}
+
+.arrow:hover:after {
+  border-left: 15px solid #f7941d;
+}
+
+/*.btn {
+    background-color: #218559;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #218559) );
+
+}
+
+.btn:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #33CCFF), color-stop(1, #ededed) );
+    background:-moz-linear-gradient( center top, #160000 5%, #ededed 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#33CCFF', endColorstr='#ededed');
+    background-color:#CCFF33;
+}*/
 
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -136,11 +229,13 @@ Footer
     font-weight: bold;
     font-size: 1.25em;
     text-align: right;
+    margin: 0px;
+    padding: 0px;
 }
 
 .links-credit ul {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 }
 
 .links-credit li {
@@ -150,10 +245,19 @@ Footer
 	display: inline-block;
 }
 
-.links-credit a:hover{
-	color: #0D56A6;
+.links-credit a:hover {
+	color: #f7941d;
 }
 
+footer {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    background: white;
+
+}
 
 footer a {
     padding: 3px 12px;
