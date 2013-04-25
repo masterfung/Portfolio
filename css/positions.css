@@ -10,6 +10,10 @@
 	border: 3px solid #f7941d;
 }
 
+.box:hover{
+	background-color: #ffa500;
+}
+
 .box-set {
 	background: #e8eae9;
 	position: relative;
@@ -22,7 +26,7 @@
 
 .box-2 {
 	top: 100px;
-	right: 620px;
+	right: 650px;
 	z-index: 2;
 }
 
