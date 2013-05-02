@@ -15,13 +15,13 @@
 
 <body>
 
-    <div class="container clearfix"> 
-            <div class="grid_4 logo">
+    <div class="grid-1000 clearfix"> 
+            <div class="col4">
                 <a href="index.html">
-                <img src="img/logotitle.png" href="index.html" alt="Tsung Hung Logo">
+                <img class="logo" src="img/logotitle.png" href="index.html" alt="Tsung Hung Logo">
                 </a>
             </div>
-            <div class="grid_8 omega">
+            <div class="col8 last">
                 <nav class="nav">
                     <ul class="current">
                         <li><a href="about.html">About</a></li>
@@ -32,36 +32,66 @@
                     </ul>
                 </nav>
             </div>
-            <section class="grid_8">
-               <h1>Spring 2013 @ the Starter League</h1>
-               <h2>Advanced HTML/CSS</h2>
-               <h3>Week 1 to Week 3 Summary Experience</h3>
-               <h4>April 25th, 2013</h4>
-               <p>The first three weeks at the Starter League flew by so quickly. I had learned so much from Shay (the instructor) that I want to use this blog to communicate my journey and development. The <a class="blog-anchors" href="design.html" target="_blank"><strong>Design</strong><img src="img/ui-tab-arrow.png" alt="Icon for New Window"></a> section will provide my work as I learn more concepts from class.</p>
-               <a class="arrow" href="first-journey.html">Continue Reading &raquo;</a>
-            </section>
 
-            <section class="grid_4 omega most-recent">
-                <h1>Most Recent Articles</h1>
-                <a href="first-journey.html">Week 1 to Week 3 Summary Experience</a>
-                <p>April 25th, 2013</p>
-                <p>The first three weeks at the Starter League flew by so quickly [<a href="first-journey.html">...</a>]</p>
+            <div class="onerow clearfix">
+                <section class="col8">
+                   <h1 class="titles">Blog</h1>
+                   <h2 class="titles">Spring 2013 @ Starter League: Advanced HTML/CSS</h2>
+                   <h3>Responsive Design</h3>
+                   <h4>April 30th, 2013</h4>
+                   <p>This week, we learned about Responsive Design. Take a moment now to experiment with this site by dragging the corners or left or right sides to see what happens. The process to make this site responsive and fluid was challenging and fun.</p>
 
 
+                   <h3>Complex Selectors</h3>
+                   <h4>April 26th, 2013</h4>
+                   <p>I wanted to do more with complex selectors. I did not get the chance to actually work on the complex selectors until now. Head on over to check out the development.</p>
+                    <a class="arrow" href="complex-selectors.html">Continue Reading &raquo;</a>                    
 
-            </section>
+                   <h3>Week 1 to Week 3 Summary Experience</h3>
+                   <h4>April 25th, 2013</h4>
+                   <p>The first three weeks at the Starter League flew by so quickly. I had learned so much from Shay (the instructor) that I want to use this blog to communicate my journey and development. The <a class="blog-anchors" href="design.html" target="_blank"><strong>Design</strong><img src="img/ui-tab-arrow.png" alt="Icon for New Window"></a> section will provide my work as I learn more concepts from class.</p>
+                   <a class="arrow" href="first-journey.html">Continue Reading &raquo;</a>
+                </section>
 
-            <br>
-            <br>
+                <section class="col4 last recent">
+                    
+                    <h1 class="recent-articles-header">Most Recent Articles</h1>
+
+                    <div class="recent-art blog-recent">
+                        
+                        <a class="recent-anchors" href="first-journey.html">Responsive Design</a>
+                        <p>April 25th, 2013</p>
+                        <p>The first three weeks at the Starter League flew by so quickly [<a href="first-journey.html">...</a>]</p>
+
+                    </div>
+                    <div class="recent-art blog-recent">                    
+
+                        <a class="recent-anchors" href="first-journey.html">Complex Selectors</a>
+                        <p>April 25th, 2013</p>
+                        <p>The first three weeks at the Starter League flew by so quickly [<a href="complex-selectors.html">...</a>]</p>                    
+
+                    </div>
+                    <div class="recent-art blog-recent">
+
+                        <a class="recent-anchors" href="first-journey.html">Week 1 to Week 3 Summary Experience</a>
+                        <p>April 25th, 2013</p>
+                        <p>The first three weeks at the Starter League flew by so quickly [<a href="first-journey.html">...</a>]</p>
+                    </div>
+
+                </section>
 
 
 
-            <footer class="container">
-                <div class="copyright grid_4">
-                    <p>All Content Copyright &copy; <strong>Tsung Ming Hung</strong> 2012 &mdash; 2013.</p>
+            <div class="end-spacing"></div>
+
+            </div>
+
+            <footer class="grid-1000 onerow">
+                <div class="col5">
+                    <p class="copyright">All Content Copyright &copy; <strong>Tsung Ming Hung</strong> 2012 &mdash; 2013.</p>
                 </div>
                 
-                <div class="links-credit" class="grid_8 omega">
+                <div class="links-credit" class="col7 last">
 
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -76,8 +106,8 @@
                 </div>
                 
             </footer>
-
     </div>
+
 
 </body>
 </html>
