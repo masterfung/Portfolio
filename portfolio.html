@@ -15,13 +15,13 @@
 
 <body>
 
-    <div class="container clearfix"> 
-            <div class="grid_4 logo">
+    <div class="grid-1000 clearfix"> 
+            <div class="col4">
                 <a href="index.html">
-                <img src="img/logotitle.png" href="index.html" alt="Tsung Hung Logo">
+                <img class="logo" src="img/logotitle.png" href="index.html" alt="Tsung Hung Logo">
                 </a>
             </div>
-            <div class="grid_8 omega">
+            <div class="col8 last">
                 <nav class="nav">
                     <ul class="current">
                         <li><a href="about.html">About</a></li>
@@ -33,20 +33,29 @@
                 </nav>
             </div>
 
-        <div class="main-container">
+        <div class="onerow">
             <div class="main clearfix">
 
-                <article class="grid_12">
+                <article class="col12">
 
                     <h1 class="hero">Art Portfolio</a></h1>
 
-                    <section class="grid_6">
+                    <section class="col6">
 
                     <h1>Art</h1>
 
                     <h2>Processing</h2>
-                    <a href="atomos.html"><iframe width="150" height="108" scrolling="no" frameborder="0" src="http://www.openprocessing.org/sketch/96764/embed/?width=950&amp;height=950&amp;border=true"></iframe></a>
-                    <a href="cresta.html"><iframe width="150" height="108" scrolling="no" frameborder="0" src="http://www.openprocessing.org/sketch/96770/embed/?width=950&amp;height=950&amp;border=true"></iframe></a>
+                    <a href="atomos.html">
+                        <figure>
+                            <iframe width="150" height="108" scrolling="no" frameborder="0" src="http://www.openprocessing.org/sketch/96764/embed/?width=950&amp;height=950&amp;border=true"></iframe>
+                        </figure>
+                    </a>
+                    <a href="cresta.html">
+                        <figure>
+                            <iframe width="150" height="108" scrolling="no" frameborder="0" src="http://www.openprocessing.org/sketch/96770/embed/?width=950&amp;height=950&amp;border=true"></iframe>
+                        </figure>
+                    </a>
+
                     <p>A powerful, open-source program that packs a huge punch. I am using this program to make work for my class.</p>
                     <a class="arrow" href="processing.html">Read More &raquo;</a>
 
@@ -60,28 +69,40 @@
 
                     </section>
 
-                    <section class="grid_6 omega">
+                    <section class="col6 last">
                     <h1>Videos</h1>
 
                     <h2 class="header-title">Animation</a></h2>
-                    <iframe src="http://player.vimeo.com/video/62382418" width="500" height="368" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    <figure>
+                        <iframe src="http://player.vimeo.com/video/62382418" width="500" height="368" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </figure>
                     <p>Shapes are everywhere. This short animation takes a dive into the world of shapes and explores both the macro and micro entities.</p>
-
-                    <iframe src="http://player.vimeo.com/video/32927668" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    <figure>
+                        <iframe src="http://player.vimeo.com/video/32927668" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </figure>
                     <p>My first animation. Full of cheese...</p>
 
                     <h2 class="header-title">Timelapse</a></h2>
-                    <iframe src="http://player.vimeo.com/video/58482200" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    <figure>
+                        <iframe src="http://player.vimeo.com/video/58482200" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </figure>
                     <p>Shapes are everywhere. This short animation takes a dive into the world of shapes and explores both the macro and micro entities.</p>
 
                     <h2 class="header-title">Experimental</a></h2>
-                    <iframe src="http://player.vimeo.com/video/55104787" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    <figure>
+                        <iframe src="http://player.vimeo.com/video/55104787" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </figure>
+
                     <p>Light + Speed + Apparatus</p>
 
-                    <iframe src="http://player.vimeo.com/video/53621285" width="500" height="367" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    <figure>
+                        <iframe src="http://player.vimeo.com/video/53621285" width="500" height="367" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </figure>
                     <p>Experimental collaging meets video and effects!</p>
 
-                    <iframe src="http://player.vimeo.com/video/32927668" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    <figure>
+                        <iframe src="http://player.vimeo.com/video/32927668" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </figure>
                     <p>First video on Vimeo. Compiled work of collages, online media, and 3D works.</p>
 
 
@@ -94,18 +115,14 @@
             </div> 
         
         </div>
-        <br>
-        <br>
+            <div class="end-spacing"></div>
 
-
-
-
-            <footer class="container">
-                <div class="copyright grid_4">
-                    <p>All Content Copyright &copy; <strong>Tsung Ming Hung</strong> 2012 &mdash; 2013.</p>
+            <footer class="grid-1000 onerow">
+                <div class="col5">
+                    <p class="copyright">All Content Copyright &copy; <strong>Tsung Ming Hung</strong> 2012 &mdash; 2013.</p>
                 </div>
                 
-                <div class="links-credit" class="grid_8 omega">
+                <div class="links-credit" class="col7 last">
 
                     <ul>
                         <li><a href="index.html">Home</a></li>
