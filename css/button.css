@@ -26,21 +26,21 @@ Default	 Button
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #120000), color-stop(1, #ededed) );
 	background:-moz-linear-gradient( center top, #160000 5%, #ededed 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#120000', endColorstr='#ededed');
-	background-color:#dfdfdf;
+	background-color: #dfdfdf;
 }
 
 .bttn-large:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #120000), color-stop(1, #ededed) );
 	background:-moz-linear-gradient( center top, #160000 5%, #ededed 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#120000', endColorstr='#ededed');
-	background-color:#dfdfdf;
+	background-color: #dfdfdf;
 }
 
 .bttn-small:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #120000), color-stop(1, #ededed) );
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4EE2EC), color-stop(1, #ededed) );
 	background:-moz-linear-gradient( center top, #160000 5%, #ededed 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#120000', endColorstr='#ededed');
-	background-color:#dfdfdf;
+	background-color: #dfdfdf;
 }
 
 .bttn-good {
@@ -136,6 +136,7 @@ Small Button
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	vertical-align: middle;
 	text-transform: bold;
+	margin-bottom: 20px;
 
 }
 
@@ -166,3 +167,55 @@ Small Button
 .bttn-vanilla-small {
 	background-color: gray;
 }
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++
+Alerts
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.alerts {
+	background: #fff;
+	margin-bottom: 40px;
+	padding: 15px;
+	text-align: center;
+	height: 15%;
+	width: 80%;
+}
+
+.alerts h3 {
+	font-size: 4em;
+}
+
+.alerts p {
+	font-size: 2.5em;
+}
+
+.alerts h3:hover {
+	color: #FFA500;
+}
+
+.alerts-success {
+	border: solid 15px #87F717;
+}
+
+
+.alerts-warning {
+	border: solid 15px #800517;
+}
+
+.alerts-failed {
+	border: solid 15px red;
+}
+
+.alerts-tip {
+	border: solid 15px #4EE2EC;
+}
+
+
+
+
+
+
+
+
+

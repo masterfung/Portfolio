@@ -112,6 +112,10 @@ iframe {
   vertical-align: middle;
 }
 
+.contact-paragraph {
+  text-align: center;
+}
+
 .titles {
   text-align: center;
 }
@@ -188,17 +192,23 @@ Blog Specific
   border-radius: 5px;
   padding: 0.5em 0.2em 0.2em 0.2em;
   display: inline-block;
+  padding: 12px;
+}
+
+.advertisements {
+  text-align: center;
+  padding-top: 20px;
 }
 
 .complex-selectors p ~ p {
   text-indent: 30px;
   }
 
-a[href^="https"]:after {
+.complex-selectors a[href^="https"]:after {
   content: url('http://p.yusukekamiyamane.com/icons/search/fugue/icons/lock.png');
 }
 
-a[href$=".pdf"]:after {
+.complex-selectors a[href$=".pdf"]:after {
   content: url('http://www.environmentalstewardship.org/CMImages/ESAP/adobe_pdf_icon.gif');
 }
 
@@ -272,20 +282,58 @@ Arrows and Buttons
 }*/
 
 
+/*+++++++++++++++++++++++++++++++++++++++++++++++++
+Tooltips
++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.tooltips-body {
+  font-size: 1.5em;
+}
+
+.tooltips {
+  display: inline;
+  width: 300px;
+  padding: 10px;
+  font-family: Georgia;
+  font-style: italic;
+  text-decoration: none;
+  background-color: #333;
+  position: relative;
+}
+
+.tooltips:after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  border: 15px solid transparent;
+  border-top: 15px solid #333;
+  color: #fff;
+  position: absolute;
+  bottom: -20px;
+  left: 10%;    
+}
+
+.tooltips-trigger:hover .tooltips {
+  display: block;
+}
+
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Footer
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 .copyright {
-  font-size: 1.5em;
-  text-align: left;
+  font-size: 2em;
+  text-align: center;
+  color: #FFA500;
+  font-weight: bold;
 }
 
 .links-credit {
 	position: relative;
   font-weight: bold;
-  font-size: 1.5em;
-  text-align: right;
+  font-size: 2.5em;
+  text-align: center;
 }
 
 .links-credit li {
@@ -299,16 +347,18 @@ Footer
 	color: #f7941d;
 }
 
-footer {
+.footer {
   bottom: 0;
   left: 0;
-  position: inherit;
+  position: relative;
   right: 0;
-  background: white;
+  background: #fff;
+  border-top: solid 1px gray;
+  margin: 0px -10px 0px;
 
 }
 
-footer a {
+.footer a {
   padding: 3px 12px;
   text-decoration: none;
   color: #999;
@@ -316,6 +366,23 @@ footer a {
   text-align: center;
   text-decoration: none;
   font-weight: bold;
+}
+
+.footer-statement {
+  font-size: 2em;
+  text-align: center;
+  font-style: italic;
+}
+
+.footer-twitter {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.footer-quote {
+  font-size: 1em;
+  text-align: center;
+  padding: 12px 0px;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
