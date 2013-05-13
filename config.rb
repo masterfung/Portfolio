@@ -2,9 +2,9 @@
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "stylesheets"
+css_dir = "css"
 sass_dir = "sass"
-images_dir = "images"
+images_dir = "img"
 javascripts_dir = "javascripts"
 
 # You can select your preferred output style here (can be overridden via the command line):
@@ -16,4 +16,4 @@ javascripts_dir = "javascripts"
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 # line_comments = false
 
-preferred_syntax = :sass
+preferred_syntax = :scss

@@ -1,0 +1,53 @@
+/*
+Syntax error: File to import not found or unreadable: compass/reset.
+              Load paths:
+                /Users/tsunghung/Library/Application Support/Sublime Text 2/Packages
+                /Users/tsunghung/Dropbox/Artist Website/TsungSite/sass
+        on line 7 of /Users/tsunghung/Dropbox/Artist Website/TsungSite/sass/screen.sass
+
+2:   Welcome to Compass.
+3:   In this file you should write your main styles. (or centralize your imports)
+4:   Import this file using the following HTML or equivalent:
+5:   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+6: 
+7: @import compass/reset
+
+Backtrace:
+/Users/tsunghung/Dropbox/Artist Website/TsungSite/sass/screen.sass:7
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/import_node.rb:45:in `import'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/tree/root_node.rb:20:in `render'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/engine.rb:315:in `_render'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/engine.rb:262:in `render'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:299:in `block in watch'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
+/Users/tsunghung/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.2.8/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: compass/reset.\A               Load paths:\A                 /Users/tsunghung/Library/Application Support/Sublime Text 2/Packages\A                 /Users/tsunghung/Dropbox/Artist Website/TsungSite/sass\A         on line 7 of /Users/tsunghung/Dropbox/Artist Website/TsungSite/sass/screen.sass\A \A 2:   Welcome to Compass.\A 3:   In this file you should write your main styles. (or centralize your imports)\A 4:   Import this file using the following HTML or equivalent:\A 5:   <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" />\A 6: \A 7: @import compass/reset"; }
