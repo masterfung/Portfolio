@@ -54,7 +54,8 @@ nav a:hover {
 }
 
 .current {
-  border-radius: 5px;
+  @include border-radius(5px);
+  // border-radius: 5px;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -306,9 +307,9 @@ Arrows and Buttons
 }
 
 
-/*+++++++++++++++++++++++++++++++++++++++++++++++++
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Tooltips
-+++++++++++++++++++++++++++++++++++++++++++++++++*/
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 a.tooltip {
   outline: none;
@@ -349,13 +350,14 @@ span.tooltip-text {
 /*CSS3 extras*/
 a.tooltip span
 {
-  border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
+  @include border-radius(6px);
+  // border-radius: 6px;
+  // -moz-border-radius: 6px;
+  // -webkit-border-radius: 6px;
 
   -moz-box-shadow: 5px 5px 8px #CCC;
   -webkit-box-shadow: 5px 5px 8px #CCC;
-  box-shadow: 5px 5px 8px #CCC;
+  @include box-shadow(5px 5px 8px #CCC);
 }
 
 
@@ -413,17 +415,20 @@ Footer
   @extend .faces-pol-title;
   font-size: 2em;
   font-style: italic;
+  line-height: 1em;
 }
 
 .footer-twitter {
   @extend .faces-pol-title;
   font-size: 1.5em;
+  line-height: 1em;
 }
 
 .footer-quote {
   @extend .faces-pol-title;
   font-size: 1em;
   padding: 12px 0px;
+  line-height: 1em;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -518,11 +523,6 @@ Footer
     float: none;
   }
 
-  img {
-    width: 20%;
-    height: 20%
-  }
-
   nav {
     text-align: center;
   }
@@ -544,6 +544,10 @@ Footer
       img {
         width: 99%;
   }
+  }
+
+  #footer-twitter-img  {
+    max-width: 100%;
   }
 
   #menu {
