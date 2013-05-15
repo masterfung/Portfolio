@@ -536,15 +536,14 @@ Footer
     height: 70%;
   }
 
-  img.logo {
-    width: 99%;
-  }
-
   #logo  {
     width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+      img {
+        width: 99%;
+  }
   }
 
   #menu {
