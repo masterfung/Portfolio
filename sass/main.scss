@@ -13,7 +13,7 @@ Import
 Variables
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-
+$green: #8ec63f;
 $orange: #f7941d;
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -47,15 +47,13 @@ nav a {
 	line-height: 100%;
   text-decoration: none;
   font-weight: bold;
-}
-
-nav a:hover {
-	color: $orange;
+    &:hover {
+      color: $orange;
+    }
 }
 
 .current {
   @include border-radius(5px);
-  // border-radius: 5px;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -156,13 +154,13 @@ iframe {
 
 aside {
   @extend .faces-pol-title;
+  @include border-radius(10px);
+  @include text-shadow(rgba(0, 0, 0, 0.25) 0 1px 0);
   background-color: #D0C6B1;
   color: black;
   position: relative;
   font-weight: bold;
-  border-radius: 10px;
   text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fff), color-stop(100%, #D0C6B1))
 }
 
@@ -205,10 +203,9 @@ Blog Specific
   text-decoration: none;
   font-size: 1.5em;
   color: black;
-}
-
-.blog-anchors:hover {
-  color: $orange;
+    &:hover {
+      color: $orange;
+    }
 }
 
 .recent-art {
@@ -220,10 +217,9 @@ Blog Specific
   line-height: 1.5em;
   text-decoration: none;
   color: blue;
-}
-
-.recent-anchors:hover {
-  color: $orange;
+    &:hover {
+    color: $orange;
+    }
 }
 
 .recent-articles-header {
@@ -260,7 +256,7 @@ Arrows and Buttons
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 .arrow {
-  background: #8ec63f;
+  background: $green;
   color: #fff;
   display: inline-block;
   height: 30px;
@@ -268,6 +264,11 @@ Arrows and Buttons
   padding: 0 12px;
   position: relative;
   text-decoration: none;
+    &:hover {
+      background: $orange;
+      color: #fff;
+
+    }
 }
 
 .arrow:before,
@@ -279,22 +280,17 @@ Arrows and Buttons
 }
 
 .arrow:before {
-  border-bottom: 15px solid #8ec63f;
+  border-bottom: 15px solid $green;
   border-left: 15px solid transparent;
-  border-top: 15px solid #8ec63f;
+  border-top: 15px solid $green;
   left: -15px;
 }
 
 .arrow:after {
   border-bottom: 15px solid transparent;
-  border-left: 15px solid #8ec63f;
+  border-left: 15px solid $green;
   border-top: 15px solid transparent;
   right: -15px;
-}
-
-.arrow:hover {
-  background: $orange;
-  color: #fff;
 }
 
 .arrow:hover:before {
@@ -303,7 +299,7 @@ Arrows and Buttons
 }
 
 .arrow:hover:after {
-  border-left: 15px solid #f7941d;
+  border-left: 15px solid $orange;
 }
 
 
@@ -314,15 +310,14 @@ Tooltips
 a.tooltip {
   outline: none;
   font-size: 1.2em;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 a.tooltip strong {
   line-height: 30px;
 }
-
-a.tooltip:hover {
-  text-decoration: none;
-} 
 
 a.tooltip span {
   z-index: 10;
@@ -351,15 +346,43 @@ span.tooltip-text {
 a.tooltip span
 {
   @include border-radius(6px);
-  // border-radius: 6px;
-  // -moz-border-radius: 6px;
-  // -webkit-border-radius: 6px;
-
-  -moz-box-shadow: 5px 5px 8px #CCC;
-  -webkit-box-shadow: 5px 5px 8px #CCC;
   @include box-shadow(5px 5px 8px #CCC);
 }
 
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+jQuery Related Styling
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.accordian-title {
+  @include border-radius(10px);
+  @include text-shadow(1px 1px gray);
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.vanishing-box {
+  @include border-radius(5px);
+  @include box-shadow(1px 1px gray);
+  height: 100px;
+  width: 100px;
+  background-color: $orange;
+  display: inline-block;
+  color: white;
+  font-size: 3em;
+  margin: 2px;
+  padding: 10px;
+    &:hover {
+      background-color: $green;
+    }
+}
+
+#bouncing-ball {
+  @include border-radius(100px);
+  height: 200px;
+  width: 200px;
+  background-color: $green;
+  position: relative;
+}
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Footer
