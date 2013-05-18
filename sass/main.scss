@@ -195,6 +195,15 @@ img.faces-pol {
   @extend .faces-pol-title;
 }
 
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Processing Related 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+// iframe related matters
+.processing-div {
+  height: 400px;
+}
+
+
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Blog Specific
@@ -582,6 +591,10 @@ Footer
   footer ul {
     text-align: center;
     padding-left: 0;
+  }
+
+  .col8, .col6 {
+    width: 100%;
   }
 
 

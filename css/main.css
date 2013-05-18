@@ -520,190 +520,198 @@ Portoflio Specific 2D and 3D
 .eleganster { border-right: 2px solid #E6E8FA; padding: 10px 15px; }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Processing Related 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* line 202, ../sass/main.scss */
+.processing-div { height: 400px; }
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Blog Specific
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/* line 203, ../sass/main.scss */
+/* line 212, ../sass/main.scss */
 .blog-anchors { text-decoration: none; font-size: 1.5em; color: black; }
-/* line 207, ../sass/main.scss */
+/* line 216, ../sass/main.scss */
 .blog-anchors:hover { color: #f7941d; }
 
-/* line 212, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 .recent-art { line-height: 0.5em; }
 
-/* line 216, ../sass/main.scss */
+/* line 225, ../sass/main.scss */
 .recent-anchors { font-size: 2em; line-height: 1.5em; text-decoration: none; color: blue; }
-/* line 221, ../sass/main.scss */
+/* line 230, ../sass/main.scss */
 .recent-anchors:hover { color: #f7941d; }
 
-/* line 226, ../sass/main.scss */
+/* line 235, ../sass/main.scss */
 .recent-articles-header { font-size: 3em; }
 
-/* line 230, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 .blog-recent { border: 1px solid black; padding: 0.5em 0.2em 0.2em 0.2em; display: inline-block; padding: 12px; }
 
-/* line 238, ../sass/main.scss */
+/* line 247, ../sass/main.scss */
 .advertisements { padding-top: 20px; }
 
-/* line 243, ../sass/main.scss */
+/* line 252, ../sass/main.scss */
 .complex-selectors p ~ p { text-indent: 30px; }
 
-/* line 247, ../sass/main.scss */
+/* line 256, ../sass/main.scss */
 .complex-selectors a[href^="https"]:after { content: url("http://p.yusukekamiyamane.com/icons/search/fugue/icons/lock.png"); }
 
-/* line 251, ../sass/main.scss */
+/* line 260, ../sass/main.scss */
 .complex-selectors a[href$=".pdf"]:after { content: url("http://www.environmentalstewardship.org/CMImages/ESAP/adobe_pdf_icon.gif"); }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Arrows and Buttons
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/* line 259, ../sass/main.scss */
-.arrow { background: #8ec63f; color: #fff; display: inline-block; height: 30px; line-height: 30px; padding: 0 12px; position: relative; text-decoration: none; }
 /* line 268, ../sass/main.scss */
+.arrow { background: #8ec63f; color: #fff; display: inline-block; height: 30px; line-height: 30px; padding: 0 12px; position: relative; text-decoration: none; }
+/* line 277, ../sass/main.scss */
 .arrow:hover { background: #f7941d; color: #fff; }
 
-/* line 276, ../sass/main.scss */
+/* line 285, ../sass/main.scss */
 .arrow:before, .arrow:after { content: ""; height: 0; position: absolute; width: 0; }
 
-/* line 283, ../sass/main.scss */
+/* line 292, ../sass/main.scss */
 .arrow:before { border-bottom: 15px solid #8ec63f; border-left: 15px solid transparent; border-top: 15px solid #8ec63f; left: -15px; }
 
-/* line 290, ../sass/main.scss */
+/* line 299, ../sass/main.scss */
 .arrow:after { border-bottom: 15px solid transparent; border-left: 15px solid #8ec63f; border-top: 15px solid transparent; right: -15px; }
 
-/* line 297, ../sass/main.scss */
+/* line 306, ../sass/main.scss */
 .arrow:hover:before { border-bottom: 15px solid #f7941d; border-top: 15px solid #f7941d; }
 
-/* line 302, ../sass/main.scss */
+/* line 311, ../sass/main.scss */
 .arrow:hover:after { border-left: 15px solid #f7941d; }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Tooltips
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/* line 311, ../sass/main.scss */
+/* line 320, ../sass/main.scss */
 a.tooltip { outline: none; font-size: 1.2em; }
-/* line 314, ../sass/main.scss */
+/* line 323, ../sass/main.scss */
 a.tooltip:hover { text-decoration: none; }
 
-/* line 319, ../sass/main.scss */
+/* line 328, ../sass/main.scss */
 a.tooltip strong { line-height: 30px; }
 
-/* line 323, ../sass/main.scss */
+/* line 332, ../sass/main.scss */
 a.tooltip span { z-index: 10; display: none; padding: 14px 10px; margin-top: -30px; margin-left: 28px; width: 25%; line-height: 20px; font-size: 0.7em; }
 
-/* line 334, ../sass/main.scss */
+/* line 343, ../sass/main.scss */
 a.tooltip:hover span { display: inline; position: absolute; color: #111; border: 1px solid #DCA; background: #ffad07; }
 
-/* line 342, ../sass/main.scss */
+/* line 351, ../sass/main.scss */
 span.tooltip-text { font-size: 0.7em; }
 
 /*CSS3 extras*/
-/* line 348, ../sass/main.scss */
+/* line 357, ../sass/main.scss */
 a.tooltip span { -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 5px 5px 8px #cccccc; -moz-box-shadow: 5px 5px 8px #cccccc; box-shadow: 5px 5px 8px #cccccc; }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 jQuery Related Styling
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/* line 357, ../sass/main.scss */
+/* line 366, ../sass/main.scss */
 .accordian-title { -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; text-shadow: 1px 1px gray; border: 1px solid black; padding: 10px; }
 
-/* line 364, ../sass/main.scss */
+/* line 373, ../sass/main.scss */
 .vanishing-box { -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 1px 1px gray; -moz-box-shadow: 1px 1px gray; box-shadow: 1px 1px gray; height: 100px; width: 100px; background-color: #f7941d; display: inline-block; color: white; font-size: 3em; margin: 2px; padding: 10px; }
-/* line 375, ../sass/main.scss */
+/* line 384, ../sass/main.scss */
 .vanishing-box:hover { background-color: #8ec63f; }
 
-/* line 380, ../sass/main.scss */
+/* line 389, ../sass/main.scss */
 #bouncing-ball { -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; -o-border-radius: 100px; border-radius: 100px; height: 200px; width: 200px; background-color: #8ec63f; position: relative; }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Footer
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/* line 392, ../sass/main.scss */
+/* line 401, ../sass/main.scss */
 .copyright { font-size: 2em; color: #FFA500; font-weight: bold; }
 
-/* line 399, ../sass/main.scss */
+/* line 408, ../sass/main.scss */
 .links-credit { position: relative; font-weight: bold; font-size: 2.5em; }
 
-/* line 406, ../sass/main.scss */
+/* line 415, ../sass/main.scss */
 .links-credit li { margin: 0 0.05em 0.1em 0; padding: 0; list-style: none; display: inline-block; }
 
-/* line 413, ../sass/main.scss */
+/* line 422, ../sass/main.scss */
 .links-credit a:hover { color: #f7941d; }
 
-/* line 417, ../sass/main.scss */
+/* line 426, ../sass/main.scss */
 .footer { bottom: 0; left: 0; position: relative; right: 0; background: #fff; border-top: solid 1px gray; margin: 0px -10px 0px; }
 
-/* line 428, ../sass/main.scss */
+/* line 437, ../sass/main.scss */
 .footer a { padding: 3px 12px; text-decoration: none; color: #999; line-height: 100%; text-decoration: none; font-weight: bold; }
 
-/* line 438, ../sass/main.scss */
+/* line 447, ../sass/main.scss */
 .footer-statement { font-size: 2em; font-style: italic; line-height: 1em; }
 
-/* line 445, ../sass/main.scss */
+/* line 454, ../sass/main.scss */
 .footer-twitter { font-size: 1.5em; line-height: 1em; }
 
-/* line 451, ../sass/main.scss */
+/* line 460, ../sass/main.scss */
 .footer-quote { font-size: 1em; padding: 12px 0px; line-height: 1em; }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Helper classes
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/* line 462, ../sass/main.scss */
+/* line 471, ../sass/main.scss */
 .ir { background-color: transparent; border: 0; overflow: hidden; *text-indent: -9999px; }
 
-/* line 469, ../sass/main.scss */
+/* line 478, ../sass/main.scss */
 .ir:before { content: ""; display: block; width: 0; height: 150%; }
 
-/* line 476, ../sass/main.scss */
+/* line 485, ../sass/main.scss */
 .hidden { display: none !important; visibility: hidden; }
 
-/* line 481, ../sass/main.scss */
+/* line 490, ../sass/main.scss */
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 
-/* line 493, ../sass/main.scss */
+/* line 502, ../sass/main.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
 
-/* line 502, ../sass/main.scss */
+/* line 511, ../sass/main.scss */
 .invisible { visibility: hidden; }
 
-/* line 507, ../sass/main.scss */
+/* line 516, ../sass/main.scss */
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 
-/* line 512, ../sass/main.scss */
+/* line 521, ../sass/main.scss */
 .clearfix:after { clear: both; }
 
-/* line 516, ../sass/main.scss */
+/* line 525, ../sass/main.scss */
 .clearfix { *zoom: 1; }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Media Queries
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /* ********************************************************************************************************************* Disable padding left/right 10px if I'm 1024 or gibber - correct percentage math */
-@media all and (min-width: 1024px) { /* line 529, ../sass/main.scss */
+@media all and (min-width: 1024px) { /* line 538, ../sass/main.scss */
   .grid-1000 { max-width: 1000px; }
-  /* line 533, ../sass/main.scss */
+  /* line 542, ../sass/main.scss */
   .grid-1000 .onerow { padding: 0; } }
 /* ********************************************************************************************************************* Small devices */
-@media all and (max-width: 960px) { /* line 546, ../sass/main.scss */
+@media all and (max-width: 960px) { /* line 555, ../sass/main.scss */
   .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11 { float: none; }
-  /* line 550, ../sass/main.scss */
+  /* line 559, ../sass/main.scss */
   nav { text-align: center; }
-  /* line 554, ../sass/main.scss */
-  .copyright { text-align: center; }
-  /* line 558, ../sass/main.scss */
-  .laozi { width: 70%; height: 70%; }
   /* line 563, ../sass/main.scss */
+  .copyright { text-align: center; }
+  /* line 567, ../sass/main.scss */
+  .laozi { width: 70%; height: 70%; }
+  /* line 572, ../sass/main.scss */
   #logo { width: 50%; display: block; margin-left: auto; margin-right: auto; }
-  /* line 568, ../sass/main.scss */
-  #logo img { width: 99%; }
-  /* line 573, ../sass/main.scss */
-  #footer-twitter-img { max-width: 100%; }
   /* line 577, ../sass/main.scss */
-  #menu { float: none; width: 99%; }
+  #logo img { width: 99%; }
   /* line 582, ../sass/main.scss */
-  footer ul { text-align: center; padding-left: 0; } }
-@media all and (max-width: 550px) { /* line 592, ../sass/main.scss */
-  .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11 { width: 99%; }
+  #footer-twitter-img { max-width: 100%; }
+  /* line 586, ../sass/main.scss */
+  #menu { float: none; width: 99%; }
+  /* line 591, ../sass/main.scss */
+  footer ul { text-align: center; padding-left: 0; }
   /* line 596, ../sass/main.scss */
+  .col8, .col6 { width: 100%; } }
+@media all and (max-width: 550px) { /* line 605, ../sass/main.scss */
+  .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11 { width: 99%; }
+  /* line 609, ../sass/main.scss */
   .logo, img.faces-pol { width: 100%; max-width: 100%; }
-  /* line 601, ../sass/main.scss */
+  /* line 614, ../sass/main.scss */
   img.logo, img.faces-pol { max-width: 100%; }
-  /* line 605, ../sass/main.scss */
+  /* line 618, ../sass/main.scss */
   .recent { display: none; } }
