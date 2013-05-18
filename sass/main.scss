@@ -577,6 +577,7 @@ Footer
       img {
         width: 99%;
   }
+
   }
 
   #footer-twitter-img  {
@@ -597,7 +598,6 @@ Footer
     width: 100%;
   }
 
-
 }
 
 @media all and (max-width: 550px) {
@@ -606,17 +606,12 @@ Footer
   width: 99%;
   }
 
-  .logo {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  img.logo {
-    max-width: 100%;
-  }
-
   .recent {
     display: none;
+  }
+
+  ul.current {
+    text-align: center;
   }
 }
 
