@@ -227,7 +227,6 @@ Transformations
   margin-top: 50px;
   margin-bottom: 50px;
   margin-right: 20px;
-  align: center;
   position: absolute;
     &.simple-transformations-1 {
       background-color: blue;
@@ -284,14 +283,12 @@ input[type=range] {
 }
 
 .threeD-cube {
-  background-color: red;
+  @include transformation-parameters;
+  @extend .faces-pol-title;
   color: white;
   font-size: 3em;
   line-height: 100px;
-  text-align: center;
   display: inline-block;
-  height: 100px;
-  width: 100px;
   margin-top: 50px;
 }
 
