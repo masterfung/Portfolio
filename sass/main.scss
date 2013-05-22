@@ -209,27 +209,48 @@ Transformations
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 .twoD-box {
+  @include perspective(10px);
   background-color: red;
   display: inline-block;
   height: 100px;
   width: 100px;
-  margin: 10px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  align: center;
     &.simple-transformations-1 {
       background-color: blue;
+      @include transform(scale(1.5), translateX(-20px));
+      // @include transform(translateX(-10px));
 
   }
     &.simple-transformations-2 {
-
+      background-color: green;
+      @include transform(rotate(45deg));
   }
     &.simple-transformations-3 {
-
+      background-color: orange;
+      @include transform(scale(0.5));
+      @include transform(rotate(45deg));  
   }
     &.simple-transformations-4 {
-
+      background-color: teal;
   }
     &.simple-transformations-5 {
 
   }
+}
+
+.threeD-cube {
+  background-color: red;
+  color: white;
+  font-size: 3em;
+  line-height: 100px;
+  text-align: center;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
 }
 
 
