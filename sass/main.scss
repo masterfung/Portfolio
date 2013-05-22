@@ -223,7 +223,7 @@ Transformations
 .twoD-box {
   @include perspective(10px);
   @include transformation-parameters;
-  margin-left: 50px;
+  margin-left: 250px;
   margin-top: 50px;
   margin-bottom: 50px;
   margin-right: 20px;
@@ -244,16 +244,44 @@ Transformations
   }
 }
 
-.twoD-crazy {
-  @include transformation-parameters;
+.crazy-twoD {
+  height: 500px;
+  position: relative;
 }
 
-.simple-transformations-4 {
-      background-color: teal;
-  }
-.simple-transformations-5 {
+.twoD-crazy {
+  @include transformation-parameters;
+  margin-top: 250px;
+  margin-left: 150px;
+  position: absolute;
+    &.simple-transformations-4 {
+    background-color: teal;
+    @include transform(rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%));
+    z-index: 5;
+    }
 
-  }
+    &.simple-transformations-5 {
+    @include transform(rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%));
+    z-index: 3;
+    }
+
+    &.simple-transformations-6 {
+    @include transform(rotate(195deg) skew(15deg, 15deg) translate(-50%, 100%));
+    background-color: purple;
+    z-index: 4;
+    }
+
+    &.simple-transformations-7 {
+    @include transform(rotate(345deg) skew(-15deg, -15deg) translateX(-50px));
+    background-color: black;
+    z-index: 1;
+    }
+
+}
+
+input[type=range] {
+  margin-bottom: 100px;
+}
 
 .threeD-cube {
   background-color: red;
@@ -660,6 +688,10 @@ Footer
 
   .col8, .col6 {
     width: 100%;
+  }
+
+  .twoD-box, .twoD-crazy {
+    margin-left: 50px;
   }
 
 }
