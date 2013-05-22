@@ -204,6 +204,35 @@ Processing Related
 }
 
 
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Transformations
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.twoD-box {
+  background-color: red;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+    &.simple-transformations-1 {
+      background-color: blue;
+
+  }
+    &.simple-transformations-2 {
+
+  }
+    &.simple-transformations-3 {
+
+  }
+    &.simple-transformations-4 {
+
+  }
+    &.simple-transformations-5 {
+
+  }
+}
+
+
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Blog Specific
