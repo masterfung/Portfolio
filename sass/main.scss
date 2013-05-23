@@ -287,22 +287,66 @@ Transformations
 }
 
 input[type=range] {
+  @include auto-margin;
+  width: 600px;
+  display: block;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 
-.cube {
-  @include auto-margin;
-  position: relative;
-}
 
 .threeD-cube {
-  @include transformation-parameters;
+  @include perspective(2000px);
   @extend .faces-pol-title;
+  @include auto-margin;
+  width: 900px;
   color: white;
   font-size: 3em;
-  line-height: 100px;
-  display: inline-block;
+  line-height: 200px;
   margin-top: 50px;
+  margin-left: 100px;
+  margin-bottom: 150px;
+}
+
+.cube {
+  @include transform-style(preserve-3d);
+  @include transform(rotate3d(1, 1, 0, 45deg));
+  width: 100px;
+  height: 100px;
+
+      .side {
+        @include opacity(0.6);
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        font-weight: bold;
+
+    
+          &.cube-1 {
+            background-color: green;
+            @include transform(rotateX(0deg) translateZ(100px)); 
+          }
+          &.cube-2 { 
+            background: teal;
+            @include transform(rotateX(180deg) translateZ(100px)); 
+          }
+          &.cube-3 { 
+            background: yellow; 
+            @include transform(rotateY(90deg) translateZ(100px));
+          }
+          &.cube-4 {
+            background: black; 
+            @include transform(rotateY(-90deg) translateZ(100px));
+          }
+          &.cube-5 {
+            background: blue;
+            @include transform(rotateX(90deg) translateZ(100px));
+          }
+          &.cube-6 { 
+            background: orange; 
+            @include transform(rotateX(-90deg) translateZ(100px)); 
+          }
+        }
 }
 
 
@@ -522,15 +566,13 @@ jQuery Related Styling
 }
 
 .alert-x {
-  text-decoration: none;
-  text-align: right;
-}
-
-img.alert-sprite {
   width: 16px;
   height: 16px;
+  position: absolute;
+  text-decoration: none;
+  display: inline-block;
   background-image: url(img/ui-icons_228ef1_256x240.png);
-  background-position: -112px -140px;
+  background-position: -96px -128px;
 }
 
 

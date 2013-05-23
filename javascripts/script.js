@@ -4,7 +4,6 @@ DESIGN----jQuery Page
 
 $(document).ready(function() {
 
-	// $("img.logo").attr("src", "img/big-logo.png");
 
 	// Accordion Experiment
 	$('#accordion-experimental').accordion({collapsible: true, active: false});
@@ -45,5 +44,6 @@ $(document).ready(function() {
 	  $(this).remove();
 	});
 	})
+
 
 });
