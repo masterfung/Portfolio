@@ -39,10 +39,10 @@ $(document).ready(function() {
 	$('#bouncing-ball').animate({left: "+=550px"}, 5000);
 	$('#bouncing-ball').toggle( 'bounce', {times: 5}, 15000);
 
-	$('.alerts a').click(function() {
-		$(this).parent().fadeOut(2500, function() {
-			$(this).remove();
-		});
+	$('.alert a').click(function() {
+	$(this).parent().fadeOut(2000, function() {
+	  $(this).remove();
+	});
 	})
 
 });
