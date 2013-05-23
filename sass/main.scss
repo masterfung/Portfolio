@@ -289,6 +289,11 @@ input[type=range] {
   margin-bottom: 100px;
 }
 
+.cube {
+  @include auto-margin;
+  position: relative;
+}
+
 .threeD-cube {
   @include transformation-parameters;
   @extend .faces-pol-title;
@@ -488,6 +493,16 @@ jQuery Related Styling
   width: 200px;
   background-color: $green;
   position: relative;
+}
+
+.alerts-jquery {
+  margin-top: 100px;
+  width: 300px;
+  height: 150px;
+}
+
+.alert {
+  border: 1px solid black;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
