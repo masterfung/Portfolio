@@ -129,10 +129,11 @@ iframe {
 .hero {
   @extend .faces-pol-title;
   @extend .current;
+  @include text-shadow(0 -1px 0 rgba(0, 0, 0, 0.25));
   position: relative;
   padding: 0.4em 0.2em;
   text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  // text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   vertical-align: middle;
 }
 
@@ -503,11 +504,14 @@ jQuery Related Styling
 
 .alert {
   @extend .faces-pol-title;
-  border: 1px solid black;
+  @include border-radius(50px);
+  @include text-shadow(1px 1px 1px #ccc);
+  border: 2px solid $green;
   width: 600px;
   height: 50px;
   font-size: 2em;
   line-height: 50px;
+
   margin-bottom: 10px;
   color: white;
   background-color: $orange;
@@ -517,6 +521,17 @@ jQuery Related Styling
   background-color: red;
 }
 
+.alert-x {
+  text-decoration: none;
+  text-align: right;
+}
+
+img.alert-sprite {
+  width: 16px;
+  height: 16px;
+  background-image: url(img/ui-icons_228ef1_256x240.png);
+  background-position: -112px -140px;
+}
 
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
