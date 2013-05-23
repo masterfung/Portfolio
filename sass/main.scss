@@ -11,11 +11,16 @@ Import
 @import "tabs";
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Variables
+Variables & General Mixins
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 $green: #8ec63f;
 $orange: #f7941d;
+
+@mixin auto-margin {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Nav
@@ -136,9 +141,8 @@ iframe {
 }
 
 .logo {
+  @include auto-margin;
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .centerimage {
@@ -215,18 +219,18 @@ Transformations
 }
 
 .simple-cube {
+  @include auto-margin;
   height: 230px;
   position: relative;
-  margin-left: 100px;
+  width: 400px;
 }
 
 .twoD-box {
   @include perspective(10px);
   @include transformation-parameters;
-  margin-left: 250px;
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-right: 20px;
+  margin-left: 150px;
   position: absolute;
     &.simple-transformations-1 {
       background-color: blue;
@@ -244,8 +248,10 @@ Transformations
 }
 
 .crazy-twoD {
+  @include auto-margin;
   height: 500px;
   position: relative;
+  width: 400px;
 }
 
 .twoD-crazy {
@@ -267,6 +273,7 @@ Transformations
     &.simple-transformations-6 {
     @include transform(rotate(195deg) skew(15deg, 15deg) translate(-50%, 100%));
     background-color: purple;
+    height: 50px;
     z-index: 4;
     }
 
@@ -687,9 +694,9 @@ Footer
     width: 100%;
   }
 
-  .twoD-box, .twoD-crazy {
-    margin-left: 50px;
-  }
+  // .twoD-box, .twoD-crazy {
+  //   margin-left: 50px;
+  // }
 
 }
 
