@@ -298,21 +298,22 @@ input[type=range] {
 .threeD-cube {
   @include perspective(2000px);
   @extend .faces-pol-title;
-  @include auto-margin;
-  width: 900px;
+  // @include auto-margin; //WHY ISNT THE FREAKING MARGIN-LEFT WORKING????
+  // width: 900px;
   color: white;
   font-size: 3em;
   line-height: 200px;
-  margin-top: 50px;
-  margin-left: 100px;
+  margin-top: 150px;
   margin-bottom: 150px;
 }
 
 .cube {
   @include transform-style(preserve-3d);
   @include transform(rotate3d(1, 1, 0, 45deg));
-  width: 100px;
-  height: 100px;
+  @include auto-margin;
+  display: block;
+  width: 200px;
+  height: 200px;
 
       .side {
         @include opacity(0.6);
@@ -571,7 +572,7 @@ jQuery Related Styling
   position: absolute;
   text-decoration: none;
   display: inline-block;
-  background-image: url(img/ui-icons_228ef1_256x240.png);
+  background-image: url(../img/ui-icons_228ef1_256x240.png);
   background-position: -96px -128px;
 }
 

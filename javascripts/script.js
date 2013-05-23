@@ -4,7 +4,7 @@ DESIGN----jQuery Page
 
 $(document).ready(function() {
 
-
+// jQuery.html Page
 	// Accordion Experiment
 	$('#accordion-experimental').accordion({collapsible: true, active: false});
 	$('#accordion-sass').mouseenter(function() {
@@ -45,5 +45,11 @@ $(document).ready(function() {
 	});
 	})
 
+// Transformation Page
+	// Input Range Slider
+	$('input[type=range]').change(function () {
+		var degrees = $(this).val();
+		cube.css("-webkit-transform", "rotate3d(1, 1, 0," + degrees + "deg)");
+	});
 
 });
