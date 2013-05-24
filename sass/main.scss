@@ -171,6 +171,7 @@ aside {
 
 .end-spacing {
   padding: 10em;
+  position: relative;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -376,11 +377,13 @@ Transitions
 
 .jupiter-transition {
   margin-top: 50px;
+  margin-bottom: 50px;
   position: relative;
 }
 
 .jupiter {
-  position: absolute;
+  margin-left: 50px;
+  margin-bottom: 50px;
     &:hover {
       -webkit-animation-name: ballroll;
       -webkit-animation-duration: 2s;
@@ -394,17 +397,13 @@ Transitions
   0% {
     -webkit-transform: translateX(0px) rotate(0);
   }
-  20% {
-    -webkit-transform: translateX(200px) rotate(1turn);
-  }
-  40% {
-    -webkit-transform: translateX(400px) rotate(2turn);
-  }
-  60% {
-    -webkit-transform: translateX(600px) rotate(3turn);
-  }
-  80% {
 
+  50% {
+    -webkit-transform: translateX(300px) rotate(3turn);
+  }
+
+  100% {
+    -webkit-transform: translateX(600px) rotate(2turn);
   }
 }
 
