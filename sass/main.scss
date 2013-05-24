@@ -402,8 +402,7 @@ Transitions
 }
 
 .jupiter {
-  // margin-left: 50px;
-  // margin-bottom: 50px;
+  margin-left: 50px;
     &:hover {
       -webkit-animation-name: ballroll;
       -webkit-animation-duration: 2s;
@@ -415,15 +414,15 @@ Transitions
 
 @-webkit-keyframes ballroll {
   0% {
-    -webkit-transform: translateX(0%) rotate(0);
+    -webkit-transform: translateX(0) rotate(0);
   }
 
   50% {
-    -webkit-transform: translateX(40%) rotate(3turn);
+    -webkit-transform: translateX(300px) rotate(3turn);
   }
 
   100% {
-    -webkit-transform: translateX(85%) rotate(2turn);
+    -webkit-transform: translateX(600px) rotate(2turn);
   }
 }
 
@@ -869,9 +868,19 @@ Footer
     width: 100%;
   }
 
-  // .twoD-box, .twoD-crazy {
-  //   margin-left: 50px;
-  // }
+  @-webkit-keyframes ballroll {
+    0% {
+      -webkit-transform: translateX(0) rotate(0);
+    }
+
+    50% {
+      -webkit-transform: translateX(200px) rotate(3turn);
+    }
+
+    100% {
+      -webkit-transform: translateX(400px) rotate(2turn);
+    }
+  }
 
 }
 
@@ -888,6 +897,20 @@ Footer
   ul.current {
     text-align: center;
   }
+
+  @-webkit-keyframes ballroll {
+  0% {
+    -webkit-transform: translateX(0%) rotate(0);
+  }
+
+  50% {
+    -webkit-transform: translateX(40%) rotate(3turn);
+  }
+
+  100% {
+    -webkit-transform: translateX(85%) rotate(2turn);
+  }
+}
 }
 
 
