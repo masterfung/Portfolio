@@ -36,32 +36,30 @@ nav {
 	font-weight: bold;
   text-align: right;
   line-height: 100px;
+    & ul {
+      margin: 10px 0;
+      padding: 70px 40px 0px 20px;
+    & li {
+      margin: 0px 5px 10px 0px;
+      padding: 0px;
+      list-style: block;
+      display: inline-block;
+    & a {
+      @extend .faces-pol-title;
+      @extend .current;
+      padding: 0px 12px;
+      text-decoration: none;
+      color: #999;
+      line-height: 100%;
+      font-weight: bold;
+      color: white;
+        &:hover {
+          color: $orange;
+          border-bottom: 5px solid $green;
+        }
 }
-
-nav ul {
-	margin: 10px 0;
-	padding: 70px 40px 0px 20px;
 }
-
-nav li {
-	margin: 0px 5px 10px 0px;
-	padding: 0px;
-	list-style: block;
-	display: inline-block;
 }
-
-nav a {
-  @extend .faces-pol-title;
-  @extend .current;
-	padding: 0px 12px;
-	text-decoration: none;
-	color: #999;
-	line-height: 100%;
-  font-weight: bold;
-    &:hover {
-      color: $orange;
-      border-bottom: 5px solid $green;
-    }
 }
 
 .current {
@@ -704,17 +702,15 @@ Footer
 	position: relative;
   font-weight: bold;
   font-size: 2.5em;
-}
+    & li {
+    	margin: 40px 0px;
+    	list-style: none;
+    	display: inline-block;
+    & a:hover {
+       color: $orange;
 
-.links-credit li {
-	margin: 0 0.05em 0.1em 0;
-	padding: 0;
-	list-style: none;
-	display: inline-block;
-}
-
-.links-credit a:hover {
-	color: $orange;
+    }
+    }
 }
 
 .footer {
@@ -725,17 +721,15 @@ Footer
   background: #fff;
   border-top: solid 1px gray;
   margin: 0px -10px 0px;
-
+    & a {
+      @extend .faces-pol-title;
+      padding: 3px 12px;
+      text-decoration: none;
+      color: #999;
+      line-height: 100%;
+      text-decoration: none;
+      font-weight: bold;
 }
-
-.footer a {
-  @extend .faces-pol-title;
-  padding: 3px 12px;
-  text-decoration: none;
-  color: #999;
-  line-height: 100%;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 .footer-color {
@@ -857,6 +851,10 @@ Footer
 
   nav {
     text-align: center;
+    line-height: 0px;
+      & ul {
+        padding: 10px;
+      }
   }
 
   .copyright {
