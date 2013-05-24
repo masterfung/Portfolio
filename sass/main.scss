@@ -22,14 +22,20 @@ $orange: #f7941d;
   margin-right: auto;
 }
 
+@mixin line-height {
+  line-height: 1.5em;
+}
+
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Nav
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 nav {
+  @include text-shadow(1px 2px 2px gray);
 	position: relative;
 	font-size: 2.5em;
 	font-weight: bold;
   text-align: right;
+  line-height: 100px;
 }
 
 nav ul {
@@ -47,13 +53,14 @@ nav li {
 nav a {
   @extend .faces-pol-title;
   @extend .current;
-	padding: 3px 12px;
+	padding: 0px 12px;
 	text-decoration: none;
 	color: #999;
 	line-height: 100%;
   font-weight: bold;
     &:hover {
       color: $orange;
+      border-bottom: 5px solid $green;
     }
 }
 
@@ -62,50 +69,47 @@ nav a {
 }
 
 .header {
-  background: red;
+  background: #3F4AC6;
 }
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Body
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 body {
+  @include line-height;
   background: #eee;
-  color: #444;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 62.5%;
-  line-height: 1.2em;
 }
 
 h1 {
+  @include line-height;
   font-weight: bold;
   font-size: 4.3em;
   color: $orange;
-  line-height: 1.2em;
 }
 
 h2 {
+  @include line-height;
   font-weight: bold;
   font-size: 3.5em;
   color: black;
-  line-height: 1.2em;
 }
 
 h3 {
-  @extend h2;
+  @include line-height;
   font-size: 2.5em;
-  line-height: 1.2em;
 }
 
 
 h4 {
-  @extend h2;
+  @include line-height;
   font-size: 2.0em;
-  line-height: 1.2em;
 }
 
 p {
+  @include line-height;
   font-size: 1.6em;
-  line-height: 1.5em;
   margin-bottom: 1em;
 }
 
@@ -186,6 +190,7 @@ Index (Home Page)
   width: 300px;
   height: 300px;
   color: #fff;
+  margin-bottom: 20px;
   line-height: 300px;
   background-color: $orange;
   @include border-radius(200px);
@@ -739,22 +744,22 @@ Footer
 
 .footer-statement {
   @extend .faces-pol-title;
+  @include line-height;
   font-size: 2em;
   font-style: italic;
-  line-height: 1em;
 }
 
 .footer-twitter {
   @extend .faces-pol-title;
+  @include line-height;
   font-size: 1.5em;
-  line-height: 1em;
 }
 
 .footer-quote {
   @extend .faces-pol-title;
+  @include line-height;
   font-size: 1em;
   padding: 12px 0px;
-  line-height: 1em;
   text-transform: uppercase;
 }
 
