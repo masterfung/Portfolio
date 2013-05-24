@@ -4,6 +4,13 @@ DESIGN----jQuery Page
 
 $(document).ready(function() {
 
+// Index Page (Home Page)
+	// Bouncing Hi
+	$('#bouncing-hi').hover( function() {
+		$(this).toggle ( 'bounce', {times: 10}, 2000);
+	});
+
+
 // jQuery.html Page
 	// Accordion Experiment
 	$('#accordion-experimental').accordion({collapsible: true, active: false});
