@@ -713,22 +713,28 @@ Footer
     }
 }
 
+.footer-background {
+  color: #fff;
+  background-color: black;
+}
+
 .footer {
   bottom: 0;
   left: 0;
   position: relative;
-  right: 0;
-  background: #fff;
-  border-top: solid 1px gray;
-  margin: 0px -10px 0px;
     & a {
       @extend .faces-pol-title;
+      @include text-shadow(1px 2px 2px gray);
+      @include border-radius(5px);
       padding: 3px 12px;
       text-decoration: none;
-      color: #999;
+      color: #fff;
       line-height: 100%;
       text-decoration: none;
       font-weight: bold;
+      &:hover {
+        border-bottom: 5px solid $green;
+      }
 }
 }
 
@@ -747,6 +753,7 @@ Footer
   @extend .faces-pol-title;
   @include line-height;
   font-size: 1.5em;
+  padding-bottom: 50px;
 }
 
 .footer-quote {
@@ -879,16 +886,12 @@ Footer
 
   #footer-twitter-img  {
     max-width: 100%;
+
   }
 
   #menu {
     float: none;
     width: 99%;
-  }
-
-  footer ul {
-    text-align: center;
-    padding-left: 0;
   }
 
   .col8, .col6 {
