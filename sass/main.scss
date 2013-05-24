@@ -350,6 +350,63 @@ input[type=range] {
         }
 }
 
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Transitions
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+.box-transition {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  display: block;
+  border-style: solid;
+  border-width: 1px;
+  background-color: $orange;
+  @include border-radius(15px);
+  @include transition(width 2s, height 2s, background-color 1.2s linear, border-radius 1s ease-in);
+  @include transform (0.5s);
+    &:hover {
+      background-color: $green;
+      width: 400px;
+      height: 400px;
+      @include transform(rotateY(180deg));
+    }
+}
+
+.jupiter-transition {
+  margin-top: 50px;
+  position: relative;
+}
+
+.jupiter {
+  position: absolute;
+    &:hover {
+      -webkit-animation-name: ballroll;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-timing-function: ease-in-out;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+  }
+}
+
+@-webkit-keyframes ballroll {
+  0% {
+    -webkit-transform: translateX(0px) rotate(0);
+  }
+  20% {
+    -webkit-transform: translateX(200px) rotate(1turn);
+  }
+  40% {
+    -webkit-transform: translateX(400px) rotate(2turn);
+  }
+  60% {
+    -webkit-transform: translateX(600px) rotate(3turn);
+  }
+  80% {
+
+  }
+}
 
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -431,9 +488,9 @@ Arrows and Buttons
 .arrow:before,
 .arrow:after {
   content: "";
-  height: 0;
+  height: 0px;
   position: absolute;
-  width: 0;
+  width: 0px;
 }
 
 .arrow:before {
@@ -627,6 +684,10 @@ Footer
   font-weight: bold;
 }
 
+.footer-color {
+  background-color: #00FFEE;
+}
+
 .footer-statement {
   @extend .faces-pol-title;
   font-size: 2em;
@@ -645,6 +706,7 @@ Footer
   font-size: 1em;
   padding: 12px 0px;
   line-height: 1em;
+  text-transform: uppercase;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

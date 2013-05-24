@@ -47,7 +47,7 @@ $(document).ready(function() {
 
 // Transformation Page
 	// Input Range Slider
-	$('input[type=range]').change(function () {
+	$("input[type=range]").change(function () {
 		var degrees = $(this).val();
 		main.css("-webkit-transform", "rotate3d(1, 1, 0," + degrees + "deg)");
 	});
