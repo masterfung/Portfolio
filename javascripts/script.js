@@ -49,7 +49,7 @@ $(document).ready(function() {
 	// Input Range Slider
 	$("input[type=range]").change(function () {
 		var degrees = $(this).val();
-		main.css("-webkit-transform", "rotate3d(1, 1, 0," + degrees + "deg)");
+		$('.cube').css("-webkit-transform", "rotate3d(1, 1, 0," + degrees + "deg)");
 	});
 
 });

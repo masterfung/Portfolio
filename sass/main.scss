@@ -366,7 +366,7 @@ Transitions
   background-color: $orange;
   @include border-radius(15px);
   @include transition(width 2s, height 2s, background-color 1.2s linear, border-radius 1s ease-in);
-  @include transform (0.5s);
+  @include transform(0.5s);
     &:hover {
       background-color: $green;
       width: 400px;
@@ -382,8 +382,8 @@ Transitions
 }
 
 .jupiter {
-  margin-left: 50px;
-  margin-bottom: 50px;
+  // margin-left: 50px;
+  // margin-bottom: 50px;
     &:hover {
       -webkit-animation-name: ballroll;
       -webkit-animation-duration: 2s;
@@ -395,17 +395,19 @@ Transitions
 
 @-webkit-keyframes ballroll {
   0% {
-    -webkit-transform: translateX(0px) rotate(0);
+    -webkit-transform: translateX(0%) rotate(0);
   }
 
   50% {
-    -webkit-transform: translateX(300px) rotate(3turn);
+    -webkit-transform: translateX(40%) rotate(3turn);
   }
 
   100% {
-    -webkit-transform: translateX(600px) rotate(2turn);
+    -webkit-transform: translateX(85%) rotate(2turn);
   }
 }
+
+
 
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -464,6 +466,10 @@ Blog Specific
   content: url('http://www.environmentalstewardship.org/CMImages/ESAP/adobe_pdf_icon.gif');
 }
 
+.responsive-spacing {
+  margin-bottom: 20px;
+}
+
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Arrows and Buttons
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -477,6 +483,7 @@ Arrows and Buttons
   padding: 0 12px;
   position: relative;
   text-decoration: none;
+  margin-bottom: 20px;
     &:hover {
       background: $orange;
       color: #fff;
