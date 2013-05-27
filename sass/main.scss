@@ -55,7 +55,7 @@ nav {
       color: white;
         &:hover {
           color: $orange;
-          border-bottom: 5px solid $green;
+          border-bottom: 5px solid black;
         }
 }
 }
@@ -735,7 +735,7 @@ Footer
       text-decoration: none;
       font-weight: bold;
       &:hover {
-        border-bottom: 5px solid $green;
+        border-bottom: 5px solid white;
       }
 }
 }
