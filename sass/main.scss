@@ -192,7 +192,7 @@ Index (Home Page)
   height: 300px;
   color: #fff;
   margin-bottom: 20px;
-  line-height: 350px;
+  line-height: 300px;
   background-color: $orange;
   @include border-radius(200px);
   @include auto-margin;
@@ -787,6 +787,7 @@ Footer
   @include line-height;
   font-size: 2em;
   font-style: italic;
+  text-transform: uppercase;
 }
 
 .footer-twitter {
@@ -794,14 +795,6 @@ Footer
   @include line-height;
   font-size: 1.5em;
   padding-bottom: 50px;
-}
-
-.footer-quote {
-  @extend .faces-pol-title;
-  @include line-height;
-  font-size: 1em;
-  padding: 12px 0px;
-  text-transform: uppercase;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
