@@ -76,6 +76,8 @@ Body
 
 body {
   @include line-height;
+  padding-left: 5px;
+  padding-right: 5px;
   background: #eee;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 62.5%;
@@ -328,7 +330,7 @@ input[type=range] {
   @extend .faces-pol-title;
   // @include auto-margin; //WHY ISNT THE FREAKING MARGIN-LEFT WORKING????
   // width: 900px;
-  color: white;
+  color: #fff;
   font-size: 3em;
   line-height: 200px;
   margin-top: 150px;
@@ -382,7 +384,6 @@ input[type=range] {
 Transitions
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-
 .box-transition {
   height: 150px;
   width: 150px;
@@ -390,14 +391,15 @@ Transitions
   display: block;
   border-style: solid;
   border-width: 1px;
+  margin-left: 15px;
   background-color: $orange;
   @include border-radius(75px);
   @include transition(width 2s, height 2s, background-color 1.2s linear, border-radius 1s ease-in);
   @include transform(1.5s);
     &:hover {
       background-color: $green;
-      width: 400px;
-      height: 400px;
+      width: 350px;
+      height: 35px;
       -webkit-animation-name: weirdo;
       -webkit-animation-duration: 1s;
       -webkit-animation-timing-function: linear;
@@ -411,15 +413,29 @@ Transitions
     @include transform(translateX(0) rotate(0));
   }
 
-  50% {
+  20% {
+    @include opacity(0.2);
+    background-color: red;
+  }
+
+  40% {
     @include opacity(0.6);
     @include transform(translateX(300px) rotate(8turn));
+    background-color: yellow;
+  }
+
+  70% {
+    @include opacity(0.4);
+    @include box-shadow(5px 5px 5px gray);
+    background-color: $orange;
   }
 
   100% {
     @include opacity(0.9);
+    width: 100px;
     @include border-radius(200px);
-    @include transform(translateX(600px) rotate(16turn));
+    @include transform(translateX(850px) rotate(16turn));
+    background-color: black;
   }
 }
 
@@ -450,10 +466,19 @@ Transitions
   }
 
   100% {
-    @include transform(translateX(600px) rotate(2turn));
+    @include transform(translateX(700px) rotate(2turn));
   }
 }
 
+.pokeball {
+  @include auto-margin;
+  z-index: 1;
+  width: 500px;
+    &:hover {
+      background-image: url(../img/mew.png);
+      z-index: 2;
+    }
+}
 
 
 
@@ -635,7 +660,7 @@ jQuery Related Styling
   width: 100px;
   background-color: $orange;
   display: inline-block;
-  color: white;
+  color: #fff;
   font-size: 3em;
   margin: 2px;
   padding: 10px;
@@ -660,16 +685,16 @@ jQuery Related Styling
 
 .alert {
   @extend .faces-pol-title;
-  @include border-radius(50px);
+  @include border-radius(15px);
   @include text-shadow(1px 1px 1px #ccc);
   border: 2px solid $green;
   width: 600px;
+  height: 100px;
   height: 50px;
   font-size: 2em;
   line-height: 50px;
-
   margin-bottom: 10px;
-  color: white;
+  color: #fff;
   background-color: $orange;
 }
 
@@ -680,11 +705,18 @@ jQuery Related Styling
 .alert-x {
   width: 16px;
   height: 16px;
+  margin-left: 20px;
+  margin-top: 5px;
+  border: 1px solid #fff;
   position: absolute;
   text-decoration: none;
   display: inline-block;
   background-image: url(../img/ui-icons_228ef1_256x240.png);
   background-position: -96px -128px;
+}
+
+.shifted-alert {
+  margin-left: 40px;
 }
 
 
@@ -883,7 +915,6 @@ Footer
       img {
         width: 100%;
   }
-
   }
 
   #footer-twitter-img  {
@@ -900,13 +931,35 @@ Footer
     width: 100%;
   }
 
+  .jupiter {
+    margin-left: 15px;
+  }
+
   @-webkit-keyframes ballroll {
     0% {
       -webkit-transform: translateX(0) rotate(0);
     }
 
     50% {
-      -webkit-transform: translateX(200px) rotate(3turn);
+      -webkit-transform: translateX(250px) rotate(3turn);
+    }
+
+    100% {
+      -webkit-transform: translateX(450px) rotate(2turn);
+    }
+  }
+
+}
+
+@media all and (max-width: 700px) {
+
+  @-webkit-keyframes ballroll {
+    0% {
+      -webkit-transform: translateX(0) rotate(0);
+    }
+
+    50% {
+      -webkit-transform: translateX(250px) rotate(3turn);
     }
 
     100% {
@@ -914,24 +967,55 @@ Footer
     }
   }
 
+    @-moz-keyframes ballroll {
+    0% {
+      -webkit-transform: translateX(0) rotate(0);
+    }
+
+    50% {
+      -webkit-transform: translateX(250px) rotate(3turn);
+    }
+
+    100% {
+      -webkit-transform: translateX(400px) rotate(2turn);
+    }
+  }
+
+    @-o-keyframes ballroll {
+    0% {
+      -webkit-transform: translateX(0) rotate(0);
+    }
+
+    50% {
+      -webkit-transform: translateX(250px) rotate(3turn);
+    }
+
+    100% {
+      -webkit-transform: translateX(400px) rotate(2turn);
+    }
+  }
 }
 
 @media all and (max-width: 550px) {
 
   h1 {
     font-size: 3em;
+    line-height: 1em;
   }
 
   h2 {
     font-size: 2.5em;
+    line-height: 1em;
   }
 
   h3 {
     font-size: 2.2em;
+    line-height: 1em;
   }
 
   h4 {
     font-size: 1.8em;
+    line-height: 1em;
   }
 
   p {
@@ -939,7 +1023,7 @@ Footer
   }
 
   .col1, .col2, .col3, .col4, .col5, .col7, .col9, .col10, .col11 {
-  width: 100%;
+    width: 100%;
   }
 
   .recent {
@@ -950,9 +1034,13 @@ Footer
     text-align: center;
   }
 
+  .jupiter {
+    margin-left: 10px;
+  }
+
   @-webkit-keyframes ballroll {
   0% {
-    -webkit-transform: translateX(0%) rotate(0);
+    @include transform(translateX(0%) rotate(0));
   }
 
   50% {
@@ -960,8 +1048,27 @@ Footer
   }
 
   100% {
-    -webkit-transform: translateX(85%) rotate(2turn);
+    -webkit-transform: translateX(95%) rotate(2turn);
   }
+}
+
+.alert {
+  font-size: 1em;
+  margin-left: 10%; 
+  width: 60%;
+  max-width: 100%;
+}
+
+.links-credit {
+  font-size: 1.6em;
+}
+
+.copyright {
+  font-size: 1.3em;
+}
+
+.footer-statement {
+  font-size: 1.3em;
 }
 }
 

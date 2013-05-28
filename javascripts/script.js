@@ -59,4 +59,7 @@ $(document).ready(function() {
 		$('.cube').css("-webkit-transform", "rotate3d(1, 1, 0," + degrees + "deg)");
 	});
 
+// Media Queries
+
+
 });
