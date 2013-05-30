@@ -322,6 +322,48 @@ Transformations
 
 }
 
+.simple-twoD {
+  @include auto-margin;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.twoD-simple {
+  @include transformation-parameters;
+  @include perspective(100px);
+  margin-top: 50px;
+  position: absolute;
+    &.simple-transformation-15 {
+      @include transform(rotate(270deg) scale(2.5));
+      @include opacity(0.5);
+      @include border-radius(100px);
+      @include box-shadow(5px -1px 1px gray);
+      z-index: 1;
+    }
+
+    &.simple-transformation-16 {
+      @include transform(rotate(45deg) scale(0.5));
+      background-color: yellow;
+      z-index: 2;
+    }
+
+    &.simple-transformation-17 {
+      @include transform(scale(0.25));
+      @include border-radius(50px);
+      background-color: purple;
+      z-index: 3;
+    }
+
+    &.simple-transformation-18 {
+      @include transform(scale(0.25));
+      background-color: yellow;
+      z-index: 4;
+    }
+}
+
+// 3D Works
+
 input[type=range] {
   @include auto-margin;
   width: 600px;
