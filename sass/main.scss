@@ -324,8 +324,8 @@ Transformations
 
 .simple-twoD {
   @include auto-margin;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 800px;
   position: relative;
 }
 
@@ -335,31 +335,68 @@ Transformations
   margin-top: 50px;
   position: absolute;
     &.simple-transformation-15 {
-      @include transform(rotate(270deg) scale(2.5));
-      @include opacity(0.5);
+      @include transform(scale(2.5));
+      @include opacity(0.8);
       @include border-radius(100px);
-      @include box-shadow(5px -1px 1px gray);
-      z-index: 1;
+      z-index: 2;
     }
 
     &.simple-transformation-16 {
       @include transform(rotate(45deg) scale(0.5));
       background-color: yellow;
-      z-index: 2;
+      z-index: 4;
     }
 
     &.simple-transformation-17 {
-      @include transform(scale(0.25));
+      @include transform(scale(0.25) translateY(-300px));
       @include border-radius(50px);
       background-color: purple;
-      z-index: 3;
+      z-index: 5;
     }
 
     &.simple-transformation-18 {
-      @include transform(scale(0.25));
-      background-color: yellow;
-      z-index: 4;
+      @include transform(scale(0.25) translateY(300px));
+      @include border-radius(50px);
+      background-color: purple;
+      z-index: 6;
     }
+
+    &.simple-transformation-19 {
+      @include transform(scale(2.3));
+      @include border-radius(100px);
+      @include opacity(0.75);
+      @include box-shadow(1px -1px 1px gray);
+      background-color: #fff;
+      z-index: 3;
+    }
+
+    &.simple-transformation-20 {
+      @include transform(translate(-15%, 25%));
+      @include border-radius(10px);
+      width: 150px;
+      height: 10px;
+      background-color: yellow;
+      z-index: 7;
+    }
+
+    &.simple-transformation-21 {
+      @include transform(translate(0%, 38%));
+      @include border-radius(100px);
+      @include opacity(0.8);
+      width: 300px;
+      height: 500px;
+      background-color: black;
+      z-index: 0;
+    }
+
+    &.simple-transformation-22 {
+      @include transform(scale(0.5) translate(0%, 65%));
+      @include border-radius(100px);
+      @include opacity(0.5);
+      background-color: red;
+      z-index: 1;
+    }
+
 }
 
 // 3D Works
@@ -1117,6 +1154,5 @@ Footer
   font-size: 1.3em;
 }
 }
-
 
 
