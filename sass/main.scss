@@ -333,16 +333,19 @@ Transformations
   @include transformation-parameters;
   @include perspective(100px);
   margin-top: 50px;
+  margin-left: 50px;
   position: absolute;
     &.simple-transformation-15 {
       @include transform(scale(2.5));
       @include opacity(0.8);
+      @include box-shadow(1px -1px 1px gray);
       @include border-radius(25px);
       z-index: 2;
     }
 
     &.simple-transformation-16 {
       @include transform(rotate(45deg) scale(0.5));
+      @include box-shadow(1px -1px 1px gray);
       background-color: yellow;
       z-index: 4;
     }
@@ -373,7 +376,7 @@ Transformations
     }
 
     &.simple-transformation-20 {
-      @include transform(translate(-15%, 25%));
+      @include transform(translateX(-25px) translateY(-35px));
       @include border-radius(10px);
       width: 150px;
       height: 10px;
@@ -382,9 +385,10 @@ Transformations
     }
 
     &.simple-transformation-21 {
-      @include transform(translate(0%, 38%));
+      @include transform(translate(-30%, 40%));
       @include border-radius(100px);
       @include opacity(0.8);
+      @include box-shadow(1px -1px 1px gray);
       width: 300px;
       height: 500px;
       background-color: black;
@@ -396,6 +400,40 @@ Transformations
       @include border-radius(100px);
       background-color: green;
       z-index: 1;
+    }
+
+    &.simple-transformation-23 {
+      @include transform(translateX(150px) translateY(380px));
+      @include border-radius(100px);
+      background-color: green;
+      z-index: 1;
+    }
+
+    &.simple-transformation-24 {
+      @include transform(scale(0.3) translateX(0px) translateY(185px));
+      @include border-radius(50px);
+      @include opacity(0.9);
+      @include box-shadow(1px -1px 1px gray);
+      background-color: gray;
+      z-index: 8;
+    }
+
+    &.simple-transformation-25 {
+      @include transform(scale(0.3) translateX(170px) translateY(-120px));
+      @include border-radius(50px);
+      @include opacity(0.7);
+      @include box-shadow(1px -1px 1px black);
+      background-color: white;
+      z-index: 8
+    }
+
+    &.simple-transformation-26 {
+      @include transform(scale(0.3) translateX(-170px) translateY(-120px));
+      @include border-radius(50px);
+      @include opacity(0.7);
+      @include box-shadow(1px -1px 1px black);
+      background-color: white;
+      z-index: 8;
     }
 
 }
