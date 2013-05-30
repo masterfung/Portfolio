@@ -324,7 +324,7 @@ Transformations
 
 .simple-twoD {
   @include auto-margin;
-  width: 500px;
+  width: 50%;
   height: 800px;
   position: relative;
 }
@@ -337,7 +337,7 @@ Transformations
     &.simple-transformation-15 {
       @include transform(scale(2.5));
       @include opacity(0.8);
-      @include border-radius(100px);
+      @include border-radius(25px);
       z-index: 2;
     }
 
@@ -348,15 +348,17 @@ Transformations
     }
 
     &.simple-transformation-17 {
-      @include transform(scale(0.25) translateY(-300px));
+      @include transform(scale(0.5) translateX(100px) translateY(-85px));
       @include border-radius(50px);
+      @include box-shadow(1px -1px 1px gray);
       background-color: purple;
       z-index: 5;
     }
 
     &.simple-transformation-18 {
-      @include transform(scale(0.25) translateY(300px));
+      @include transform(scale(0.5) translateX(-100px) translateY(-85px));
       @include border-radius(50px);
+      @include box-shadow(1px -1px 1px gray);
       background-color: purple;
       z-index: 6;
     }
@@ -390,10 +392,9 @@ Transformations
     }
 
     &.simple-transformation-22 {
-      @include transform(scale(0.5) translate(0%, 65%));
+      @include transform(translateX(-50px) translateY(180px));
       @include border-radius(100px);
-      @include opacity(0.5);
-      background-color: red;
+      background-color: green;
       z-index: 1;
     }
 
