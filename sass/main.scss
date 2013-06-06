@@ -385,7 +385,7 @@ Transformations
     }
 
     &.simple-transformation-21 {
-      @include transform(translate(-30%, 40%));
+      @include transform(translate(-35%, 40%));
       @include border-radius(100px);
       @include opacity(0.8);
       @include box-shadow(1px -1px 1px gray);
