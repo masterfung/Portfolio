@@ -161,6 +161,15 @@ iframe {
   float: right;
 }
 
+.about-headers {
+  text-decoration: underline;
+}
+
+.aboutaside {
+  @include auto-margin;
+  width: 500px;
+}
+
 .border {
   background: #ccc; 
   border: 0.2em solid #f0f0f0;
@@ -844,6 +853,12 @@ jQuery Related Styling
 .shifted-alert {
   margin-left: 40px;
 }
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Modernizer
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
 
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
